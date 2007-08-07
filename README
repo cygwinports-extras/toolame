@@ -1,0 +1,59 @@
+toolame
+------------------------------------------
+tooLAME is an optimized Mpeg Audio 1/2 Layer 2 encoder.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://toolame.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/toolame/
+
+-------------------------------------------
+
+Build instructions:
+  unpack toolame-0.2l-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./toolame-0.2l-X.cygport all
+
+This will create:
+  /usr/src/toolame-0.2l-X-src.tar.bz2
+  /usr/src/toolame-0.2l-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/toolame.exe
+  /usr/share/doc/Cygwin/toolame-0.2l.README
+  /usr/share/doc/toolame-0.2l/FUTURE
+  /usr/share/doc/toolame-0.2l/HISTORY
+  /usr/share/doc/toolame-0.2l/LGPL.txt
+  /usr/share/doc/toolame-0.2l/README
+  /usr/share/doc/toolame-0.2l/html/changes.html
+  /usr/share/doc/toolame-0.2l/html/default.html
+  /usr/share/doc/toolame-0.2l/html/psycho.html
+  /usr/share/doc/toolame-0.2l/html/readme.html
+  /usr/share/doc/toolame-0.2l/html/vbr.html
+
+------------------
+
+Port Notes:
+
+----- version 0.2l-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

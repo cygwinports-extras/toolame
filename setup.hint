@@ -1,0 +1,4 @@
+category: Audio
+requires: cygwin
+sdesc: "MPEG-1 Layer 2 audio encoder"
+ldesc: "tooLAME is an optimized Mpeg Audio 1/2 Layer 2 encoder."
