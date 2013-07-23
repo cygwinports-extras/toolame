@@ -1,0 +1,27 @@
+NAME="toolame"
+VERSION=0.2l
+RELEASE=2
+CATEGORY="Audio"
+SUMMARY="MPEG-1 Layer 2 audio encoder"
+DESCRIPTION="tooLAME is an optimized Mpeg Audio 1/2 Layer 2 encoder."
+HOMEPAGE="http://toolame.sourceforge.net/"
+SRC_URI="mirror://sourceforge/toolame/${NAME}-${VERSION//.}.tgz"
+SRC_DIR="${NAME}-${VERSION//.}"
+PATCH_URI="
+	http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/media-sound/toolame/files/toolame-02l-gentoo.diff
+	http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/media-sound/toolame/files/toolame-02l-uint.patch
+	http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/media-sound/toolame/files/toolame-02l-uint32_t.patch
+"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake CC=${CC} CFLAGS="${CFLAGS}"
+}
+
+src_install() {
+	cd ${B}
+	dobin toolame.exe
+}
+
+DOCS="FUTURE LGPL.txt html/*.html"
